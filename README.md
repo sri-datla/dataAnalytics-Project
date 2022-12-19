@@ -1,4 +1,4 @@
-# dataAnalysis-Project
+# Default of credit card clients dataset - dataAnalysis-Project
 
 Dataset information - 
 
