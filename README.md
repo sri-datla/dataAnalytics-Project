@@ -72,3 +72,26 @@ K value is typically chosen as the square root of total entries in the dataset
 Achieved accuracy of 78%
 
 
+
+Instructions to perform analysis – 
+1.	R installs all the packages required to run the models
+2.	Select the dataset which should be downloaded from - https://archive.ics.uci.edu/ml/datasets/default+of+credit+card+clients (user input)
+3.	Data will be checked for null values/ blank values. If found those rows will be omitted.
+4.	As we see some inaccuracy in the original data, some recalculations were done.
+5.	Then we applied correlation method to see the columns which are highly correlated
+6.	If correlation is more than 0.80 then those columns are dropped and the data is ready for analysis.
+7.	R splits the data into 70% train and 30% test each time we run the code.
+Model 1: Naïve Bayes Classification - 
+1.	Naïve Bayes function is implemented on to the dataset
+2.	Confusion matrix was built
+3.	Accuracy will be shown on the screen
+Model 2: Logistic Regression -
+1.	We have to build the model with strong correlation and good P values by using GLM function in R.
+2.	After that we have to predict train data and build confusion matrix for that (if the value is greater than 0.5 round of to 1 and if its less round of to 0)
+3.	Than in order to calculate accuracy for test and train data we have taken diagonal sum of matrix and then divide it. 
+
+Model 3: KNN Classification -
+1.	We have applied KNN function by providing train and test data generated from the previous steps.
+2.	We built the confusion matrix and accuracy will be shown on the screen.
+
+
